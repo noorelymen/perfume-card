@@ -1,0 +1,128 @@
+/* 
+
+Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 
+
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  width: 45%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.column {
+  width: 50%;
+}
+
+.left {
+  background-image: url("./images/image-product-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3em;
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: hsl(228, 12%, 48%);
+}
+
+h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 0.9em;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 3em;
+  color: hsl(158, 36%, 37%);
+}
+
+span {
+  text-decoration: line-through;
+  font-size: 0.4em;
+  color: hsl(228, 12%, 48%);
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  padding: 1em 0.8em;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  border: none;
+}
